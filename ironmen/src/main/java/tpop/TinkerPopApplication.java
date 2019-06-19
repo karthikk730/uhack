@@ -9,6 +9,7 @@ import org.apache.tinkerpop.gremlin.structure.*;
 import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -17,8 +18,8 @@ import java.util.Set;
 import static org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.__.as;
 import static org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.__.has;
 
-
 @SpringBootApplication
+@EntityScan
 public class TinkerPopApplication {
 
     public static void main(String args[]) {
